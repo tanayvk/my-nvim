@@ -92,4 +92,16 @@ return packer.startup(function()
     config = function() require('bufferline').setup() end
   }
 
+  -- Vim Surround
+  use 'tpope/vim-surround'
+
+  -- Repeat (for using . with plugins)
+  use 'tpope/vim-repeat'
+
+  -- Neoscroll
+  use {
+    'karb94/neoscroll.nvim', 
+    config = function() require('neoscroll').setup() end
+  }
+
 end)
