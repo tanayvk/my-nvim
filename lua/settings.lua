@@ -28,7 +28,7 @@ opt.redrawtime = 10000
 opt.synmaxcol = 240       -- max column for syntax highlight
 
 opt.termguicolors = true      -- enable 24-bit RGB colors
-cmd [[colorscheme gruvbox]]
+cmd [[colorscheme onedark]]
 
 opt.expandtab = true      -- use spaces instead of tabs
 opt.shiftwidth = 4        -- shift 4 spaces when tab

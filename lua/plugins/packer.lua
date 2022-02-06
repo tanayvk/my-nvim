@@ -20,6 +20,10 @@ return packer.startup(function()
   -- use 'tanvirtin/monokai.nvim'
   -- use { 'rose-pine/neovim', as = 'rose-pine' }
   use 'morhetz/gruvbox'
+  use {
+    'navarasu/onedark.nvim',
+    config = function() require('onedark').load() end
+  }
 
   -- LSP
   use 'neovim/nvim-lspconfig'
@@ -82,6 +86,10 @@ return packer.startup(function()
   use 'tpope/vim-fugitive'
 
   -- Bufferline
-  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+  use {
+    'akinsho/bufferline.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function() require('bufferline').setup() end
+  }
 
 end)
